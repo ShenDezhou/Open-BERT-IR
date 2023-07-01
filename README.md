@@ -41,9 +41,21 @@ nDCG=DCG/IDCG
 | 数据集      | Method                | model                                                                | 语言 | NDCG@1 |NDCG@10 |NDCG@100 |NDCG@1000 |
 |----------|-----------------------|----------------------------------------------------------------------|----|--------|--------|--------|--------|
 | scifact  | Dense Retrivel        | msmarco-distilbert-base-tas-b                                        | en | 0.5333 |0.6428|0.6698|0.6811|
-| scifact  | Dense Retrivel        | multi-qa-distilbert-cos-v1                                           | en | 0.4700| 0.5957| 0.6322| 0.6425|
-| scifact  | Sparse Retrivel       | BeIR/sparta-msmarco-distilbert-base-v1                               | en | 0.5033| 0.5978| 0.6311| 0.6450|
-| scifact  | Dense Retrivel/ReRank | msmarco-distilbert-base-tas-b && cross-encoder/ms-marco-electra-base | en | 0.5767| 0.6643| 0.6958| 0.6958|
+| scifact  | Dense Retrivel        | multi-qa-distilbert-cos-v1                                           | en | 0.4700 | 0.5957| 0.6322| 0.6425|
+| scifact  | Sparse Retrivel       | BeIR/sparta-msmarco-distilbert-base-v1                               | en | 0.5033 | 0.5978| 0.6311| 0.6450|
+| scifact  | Dense Retrivel/ReRank | msmarco-distilbert-base-tas-b && cross-encoder/ms-marco-electra-base | en | 0.5767 | 0.6643| 0.6958| 0.6958|
+| scifact  | Dense Retrivel        | msmarco-distilbert-base-v3                                           | en | 0.4000 |0.5082|0.5500|0.5671|
+| scifact  | Dense Retrivel        | GPL/scifact-msmarco-distilbert-gpl                                   | en | 0.5467 |0.6641|0.6880|0.6970|
+| scifact  | Dense Retrivel        | GPL/scifact-distilbert-tas-b-gpl-self_miner                          | en | 0.5667 |0.6736|0.7043|0.7123|
+| scifact  | Dense Retrivel        | pritamdeka/S-PubMedBert-MS-MARCO-SCIFACT                             | en | 0.7900 |0.8621|0.8718|0.8718|
+| scifact  | Dense Retrivel        | income/contriever-gpl-scifact                                        | en | 0.5667 |0.6663|0.6983|0.7065|
+
+
+# 测评日志
+
+[sentence_bert_evaluation.ipynb](colab%2Fsentence_bert_evaluation.ipynb)包含Dense、Sparse以及ReRank测评脚本
+
+[sentence_bert_evaluation_dense.ipynb](colab%2Fsentence_bert_evaluation_dense.ipynb)使用Dense模型，测试了尽可能多的模型的NDCG值。
 
 
 ## 关注我们
